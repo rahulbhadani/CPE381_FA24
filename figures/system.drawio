@@ -1,0 +1,28 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" version="24.7.7">
+  <diagram name="Page-1" id="fiXmAc3vInF_abual-Br">
+    <mxGraphModel dx="940" dy="563" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="1" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EK-ESVAWsXIVAjgYVd6_-1" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;$$\mathcal{S}$$&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="150" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="EK-ESVAWsXIVAjgYVd6_-5" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.39;dx=32.29;notch=15;" vertex="1" parent="1">
+          <mxGeometry x="100" y="180" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EK-ESVAWsXIVAjgYVd6_-7" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.39;dx=32.29;notch=15;" vertex="1" parent="1">
+          <mxGeometry x="360" y="180" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EK-ESVAWsXIVAjgYVd6_-10" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;$$x(t)$$&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="180" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EK-ESVAWsXIVAjgYVd6_-11" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;$$y(t) = \mathcal{S}[x(t)]~~$$&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="180" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EK-ESVAWsXIVAjgYVd6_-15" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="620" y="165" width="10" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
