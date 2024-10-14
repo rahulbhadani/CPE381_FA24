@@ -33,7 +33,7 @@ set(gca, 'XColor', [0, 0, 0], 'YColor', [0, 0, 0], 'TickDir', 'out');
 xaxis = get(gca, 'XAxis');
 xaxis.TickLabelInterpreter = 'latex';
 yaxis = get(gca, 'YAxis');
-xlim([122, 134])
+xlim([130, 134])
 yaxis.TickLabelInterpreter = 'latex';
 title('speed', 'Interpreter','latex');
 set(gca, 'FontSize', 18);
@@ -83,13 +83,12 @@ ylabel('Phase (rad)','Interpreter', 'latex');
 exportgraphics(f, '../figures/Phase_Spectrum.pdf');
 
 
-cutoff_freq = fs*0.9;  % Hz
+cutoff_freq = 5;  % Hz
 order = 4;
 
-% Normalize the cutoff frequency to the Nyquist frequency
-normalized_cutoff_freq = cutoff_freq / (fs / 2);
+% % Normalize the cutoff frequency to the Nyquist frequency
 % Design the low-pass filter
-[b, a] = butter(order, normalized_cutoff_freq / (fs/2), 'low')
+[b, a] = butter(order, cutoff_freq / (fs/2), 'low')
 
 % Apply the filter to the velocity data
 velocity_filtered = filter(b, a, velocity_ms);
@@ -126,7 +125,7 @@ set(gca, 'XColor', [0, 0, 0], 'YColor', [0, 0, 0], 'TickDir', 'out');
 xaxis = get(gca, 'XAxis');
 xaxis.TickLabelInterpreter = 'latex';
 yaxis = get(gca, 'YAxis');
-xlim([122, 134])
+xlim([130, 134])
 yaxis.TickLabelInterpreter = 'latex';
 title('speed', 'Interpreter','latex');
 set(gca, 'FontSize', 18);
