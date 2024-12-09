@@ -1,8 +1,10 @@
 % Define the time vector
+%%
 syms t w
+n = 0;
 % Define the Heaviside step function
 u = @(t) heaviside(t);
-x = @(t) u(t) - u(t - 1);
+x = @(t) u(t-2*n) - u(t - 2*n - 1);
 
 x0 = x(t);
 x1 = x(2*t);
@@ -11,9 +13,9 @@ x1 = x(2*t);
 f= figure;
 f.Position = [1000         818        1130         420];
 subplot(121)
-fplot(x0, [-3,3], 'LineWidth',2, 'DisplayName','x(t)');
+fplot(x0, [-9,9], 'LineWidth',2, 'DisplayName','x(t)');
 hold on;
-fplot(x1, [-3,3], 'LineWidth',2, 'Color', 'r', 'LineStyle','--', 'DisplayName','x(2t)');
+fplot(x1, [-9,9], 'LineWidth',2, 'Color', 'r', 'LineStyle','--', 'DisplayName','x(2t)');
 grid on;
 grid minor;
 set(gca, 'XColor', [0, 0, 0], 'YColor', [0, 0, 0], 'TickDir', 'out');
@@ -27,7 +29,7 @@ set(gca, 'FontSize', 18);
 legend('Interpreter','latex');
 
 
-
+%%
 
 % Perform Fourier transform
 X0 = fourier(x0, t, w);

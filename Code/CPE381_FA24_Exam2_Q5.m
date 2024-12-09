@@ -1,0 +1,17 @@
+u = @(w) heaviside(w);
+w = -3:0.001:3;
+x =40.*pi.*(u(w + 0.5) - u(w - 0.5));
+f= figure;
+f.Position = [1000         818        1130         420];
+plot(w, x, 'LineWidth',2);
+grid on;
+grid minor;
+set(gca, 'XColor', [0, 0, 0], 'YColor', [0, 0, 0], 'TickDir', 'out');
+xaxis = get(gca, 'XAxis');
+xaxis.TickLabelInterpreter = 'latex';
+yaxis = get(gca, 'YAxis');
+yaxis.TickLabelInterpreter = 'latex';
+title('$X(\Omega) = 40\pi[u(\Omega + 0.5) - u(\Omega - 0.5)]$', 'Interpreter','latex');
+xlabel('$\Omega$',  'Interpreter','latex');
+set(gca, 'FontSize', 18);
+exportgraphics(f, '../figures/CPE381_FA24_Exam2_Q5.pdf');
